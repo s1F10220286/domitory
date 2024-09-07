@@ -29,3 +29,17 @@
   background-size: 200% 200%;
   animation: gradient 10s ease infinite;
 }
+
+
+@media (width = 390px) and (height = 844px) {
+  .container {
+    padding: 20px 8px;
+    /* stylelint-disable-next-line order/properties-order */
+    min-height: 100vh;
+  }
+
+  .title {
+    padding-top: 20px;
+    font-size: 48px;
+  }
+}
