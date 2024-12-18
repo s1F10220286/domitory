@@ -14,9 +14,11 @@
   0% {
     background-position: 0% 50%;
   }
+  /* stylelint-disable-next-line rule-empty-line-before */
   50% {
     background-position: 100% 50%;
   }
+  /* stylelint-disable-next-line rule-empty-line-before */
   100% {
     background-position: 0% 50%;
   }
@@ -60,6 +62,7 @@
   padding: 20px;
 }
 
+/* stylelint-disable-next-line media-feature-range-notation */
 @media (max-width: 390px) and (max-height: 844px) {
   .container {
     padding: 20px 8px;
