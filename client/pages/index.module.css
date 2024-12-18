@@ -1,7 +1,10 @@
 /* stylelint-disable CssSyntaxError */
 /* stylelint-disable order/properties-order */
-/* stylelint-disable no-duplicate-selectors */
+
 .container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   min-height: 100vh;
   padding: 40px 16px;
   background: #f8f8f8;
@@ -11,11 +14,9 @@
   0% {
     background-position: 0% 50%;
   }
-
   50% {
     background-position: 100% 50%;
   }
-
   100% {
     background-position: 0% 50%;
   }
@@ -31,14 +32,6 @@
   background-clip: text;
   background-size: 200% 200%;
   animation: gradient 10s ease infinite;
-}
-
-
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  position: relative;
 }
 
 .box1, .box2 {
@@ -58,16 +51,7 @@
   margin-right: 10px;
 }
 
-
-.sidebar {
-  width: 400px;
-  height: 550px;
-  border: 2px solid #000;
-  background-color: #e0e0e0;
-  padding: 20px;
-}
-
-/* 右側に配置される枠 */
+.sidebar,
 .sidebarRight {
   width: 400px;
   height: 550px;
@@ -76,8 +60,7 @@
   padding: 20px;
 }
 
-
-@media (width = 390px) and (height = 844px) {
+@media (max-width: 390px) and (max-height: 844px) {
   .container {
     padding: 20px 8px;
     min-height: 100vh;
