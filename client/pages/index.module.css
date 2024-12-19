@@ -9,19 +9,20 @@
   background: #f8f8f8;
 }
 
-/* stylelint-disable rule-empty-line-before */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
-/* stylelint-enable rule-empty-line-before */
+
 
 .title {
   padding-top: 40px;
